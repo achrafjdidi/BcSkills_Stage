@@ -1,0 +1,72 @@
+/* CSS */
+.dropdown {
+    position: relative;
+  }
+  .carousel-item {
+    height: 400px; /* Adjust the height as needed */
+  }
+  
+  .dropdown::after {
+    /* Add a down arrow icon after the select element */
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: calc(50% - 4px); /* Adjust this value to vertically center the arrow */
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #000; /* Change this color to match your design */
+    pointer-events: none;
+  }
+
+  #bo{
+    background-image: url('../pictures/bgf.png');
+  }
+  .parking-spots {
+    background-color: gray;
+  }
+  
+  .parking-spot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 160px;
+    height: 220px;
+    border-left: 13px solid rgb(255, 255, 255);
+    border-right: 13px solid rgb(255, 255, 255);
+    margin: 50px;
+    font-weight: bold;
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: gray;
+  }
+  
+  .symbol-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .green-symbol {
+    color: green;
+    font-size: 60px;
+    margin-bottom: 20px;  
+  }
+  
+  .red-symbol {
+    color: red;
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .spot-number {
+    font-size: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    color: white;
+  }
+  
